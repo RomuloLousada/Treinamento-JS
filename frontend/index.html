@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Treinamento</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Pesquisa de Desenvolvedores</h3>
+      </div>
+      <div>
+        <input type="text" id="nameSearch" placeholder="Pesquisa por nome" value="" class="input-format"/>
+      </div>
+      <div class="flex-container spaceAbove">
+        <div class="half left">
+          <label for="Java" class="spaceRight">
+            <input type="checkbox" id="Java" name="languageSearch" class="increase-input-size v-align-middle language-checkbox" checked/>
+            <span class="v-align-middle">Java </span> 
+          </label>
+          <label for="JavaScript" class="spaceRight">
+            <input type="checkbox" id="JavaScript" name="languageSearch" class="increase-input-size v-align-middle language-checkbox" checked/>
+            <span class="v-align-middle">JavaScript </span>
+          </label>
+          <label for="Python">
+            <input type="checkbox" id="Python" name="languageSearch" class="increase-input-size v-align-middle language-checkbox" checked/>
+            <span class="v-align-middle">Python </span>
+          </label>
+        </div>
+        <div class="half right">
+          <label for="and" class="spaceRight">
+            <input type="radio" id="and" name="languageSearch" class="increase-input-size v-align-middle language-radio"/>
+            <span class="v-align-sub">E </span>
+          </label>
+          <label for="or">
+            <input type="radio" id="or" name="languageSearch" class="increase-input-size v-align-middle language-radio" checked/>
+            <span class="v-align-sub">OU </span>
+          </label>
+        </div>
+      </div>
+    
+      <div id="devsFound"></div>
+      <div class="flex-container" id="devsGrid"></div>
+    </div>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
